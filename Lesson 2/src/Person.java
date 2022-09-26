@@ -90,11 +90,11 @@ public class Person {
         }
     }
 
-    public void sayName {
+    public void sayName() {
         System.out.println("My name is " + name + ".");
     }
 
-    public void learnJava {
+    public void learnJava() {
         System.out.println("Learning java...");
     }
 
