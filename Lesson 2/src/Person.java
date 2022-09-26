@@ -30,7 +30,7 @@ public class Person {
             }
             case 3 -> {
                 coordinates.y--;
-                direction = Directions.SOUTH
+                direction = Directions.SOUTH;
             } case 4 -> {
                 coordinates.x++;
                 coordinates.y++;
