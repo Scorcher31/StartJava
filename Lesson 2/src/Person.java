@@ -6,7 +6,7 @@ public class Person {
     private final double height = 0.78;
     private final double weight = 32.6;
     private final String name = "Svetlana";
-    private Coordinates coordinates;
+    private final Coordinates coordinates = new Coordinates();
     private boolean isSitting = false;
     private Directions direction = Directions.NORTH;
 
@@ -16,41 +16,41 @@ public class Person {
         if(isSitting)
             isSitting = false;
         switch (chose) {
-            case 0 -> {
+            case 0:
                 coordinates.x++;
                 direction = Directions.EAST;
-            }
-            case 1 -> {
+                break;
+            case 1:
                 coordinates.y++;
                 direction = Directions.NORTH;
-            }
-            case 2 -> {
+                break;
+            case 2:
                 coordinates.x--;
                 direction = Directions.WEST;
-            }
-            case 3 -> {
+                break;
+            case 3:
                 coordinates.y--;
                 direction = Directions.SOUTH;
-            } case 4 -> {
+                break;
+            case 4:
                 coordinates.x++;
                 coordinates.y++;
                 direction = Directions.NORTHEAST;
-            }
-            case 5 -> {
+                break;
+            case 5:
                 coordinates.x--;
                 coordinates.y--;
                 direction = Directions.SOUTHWEST;
-            }
-            case 6 -> {
+                break;
+            case 6:
                 coordinates.x++;
                 coordinates.y--;
                 direction = Directions.SOUTHEAST;
-            }
-            case 7 -> {
+                break;
+            case 7:
                 coordinates.x--;
                 coordinates.y++;
                 direction = Directions.NORTHWEST;
-            }
         }
     }
 
